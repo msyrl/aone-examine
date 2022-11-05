@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Content>
       <Navbar title="About" />
-      <div className="grid gap-10 lg:grid-cols-2 mt-12">
+      <div className="grid gap-10 lg:grid-cols-2">
         <div>
           <h2 className="text-xl font-bold mb-4">Lorem ipsum dolor sit amet</h2>
           <p className="mb-4 last:mb-0">

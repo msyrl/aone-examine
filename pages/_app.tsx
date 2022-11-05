@@ -1,10 +1,10 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import AOneLogo from "../public/aone-logo.png";
 import Image from "next/image";
-import { useState } from "react";
-import { classNames } from "../utils";
 import Link from "next/link";
+import { useState } from "react";
+import AOneLogo from "../public/aone-logo.png";
+import "../styles/globals.css";
+import { classNames } from "../utils";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
@@ -76,7 +76,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </li>
         </ul>
       </div>
-      <div className="sm:ml-[250px]">
+      <div className="sm:ml-[250px] bg-[#F7F8FC] min-h-screen">
         <button
           type="button"
           className="bg-[#363740] text-white p-3 rounded-full mr-4 mb-4 fixed bottom-0 right-0 sm:invisible z-20"
