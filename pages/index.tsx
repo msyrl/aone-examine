@@ -1,23 +1,12 @@
 import Image from "next/image";
-import avatar from "../public/avatar.png";
+import Content from "../components/Content";
+import Navbar from "../components/Navbar";
 import about from "../public/about.png";
 
 export default function Home() {
   return (
-    <div className="p-8">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">About</h1>
-        <div className="flex items-center">
-          <p className="font-semibold mr-2 invisible sm:visible">
-            Jones Ferdinand
-          </p>
-          <button type="button">
-            <div className="rounded-full overflow-hidden outline outline-2 outline-[#DFE0EB] border-2 border-transparent">
-              <Image src={avatar} alt="Jones Ferdinand" />
-            </div>
-          </button>
-        </div>
-      </div>
+    <Content>
+      <Navbar />
       <div className="grid gap-10 lg:grid-cols-2 mt-12">
         <div>
           <h2 className="text-xl font-bold mb-4">Lorem ipsum dolor sit amet</h2>
@@ -43,6 +32,6 @@ export default function Home() {
           <Image src={about} alt="About" className="w-full" />
         </div>
       </div>
-    </div>
+    </Content>
   );
 }
