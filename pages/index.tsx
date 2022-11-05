@@ -6,7 +6,7 @@ import about from "../public/about.png";
 export default function Home() {
   return (
     <Content>
-      <Navbar />
+      <Navbar title="About" />
       <div className="grid gap-10 lg:grid-cols-2 mt-12">
         <div>
           <h2 className="text-xl font-bold mb-4">Lorem ipsum dolor sit amet</h2>

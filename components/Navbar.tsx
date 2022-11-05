@@ -1,10 +1,14 @@
 import Image from "next/image";
 import avatar from "../public/avatar.png";
 
-export default function Navbar() {
+type Props = {
+  title: string;
+};
+
+export default function Navbar({ title }: Props) {
   return (
     <div className="flex justify-between items-center">
-      <h1 className="text-2xl font-bold">About</h1>
+      <h1 className="text-2xl font-bold">{title}</h1>
       <div className="flex items-center">
         <p className="font-semibold mr-2 invisible sm:visible">
           Jones Ferdinand
