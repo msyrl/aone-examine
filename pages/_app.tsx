@@ -4,6 +4,7 @@ import AOneLogo from "../public/aone-logo.png";
 import Image from "next/image";
 import { useState } from "react";
 import { classNames } from "../utils";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(true);
@@ -30,8 +31,8 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
         <ul>
           <li>
-            <a
-              href="/about"
+            <Link
+              href="/"
               className="flex items-center px-8 py-4 text-[#A4A6B3]"
             >
               <svg
@@ -49,10 +50,10 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
               </svg>
               <p className="ml-6">About</p>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="/users"
               className="flex items-center px-8 py-4 text-[#A4A6B3]"
             >
@@ -71,7 +72,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
               </svg>
               <p className="ml-6">Users</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
