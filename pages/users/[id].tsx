@@ -39,15 +39,17 @@ export default function User() {
                 <div className="p-4 w-full">
                   <dl>
                     <dt>First Name</dt>
-                    <dd className="font-light mb-4 last:mb-0">
+                    <dd className="text-[#828282] font-light mb-4 last:mb-0">
                       {user.first_name}
                     </dd>
                     <dt>Last Name</dt>
-                    <dd className="font-light mb-4 last:mb-0">
+                    <dd className="text-[#828282] font-light mb-4 last:mb-0">
                       {user.last_name}
                     </dd>
                     <dt>Email</dt>
-                    <dd className="font-light mb-4 last:mb-0">{user.email}</dd>
+                    <dd className="text-[#828282] font-light mb-4 last:mb-0">
+                      {user.email}
+                    </dd>
                   </dl>
                 </div>
               </div>
