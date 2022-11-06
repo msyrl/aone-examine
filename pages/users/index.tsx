@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import Content from "../../components/Content";
 import Navbar from "../../components/Navbar";
 import { UsersResponseType, UserType } from "../../types";
-import { fetchUsers } from "../../utils";
-
-const getUserFullName = (user: UserType) =>
-  [user.first_name, user.last_name].filter(Boolean).join(" ");
+import { fetchUsers, getUserFullName } from "../../utils";
 
 export default function Users() {
   const [users, setUsers] = useState<UserType[]>([]);
